@@ -10,7 +10,6 @@ CREATE TABLE Conta ('),
 ('Saldo DECIMAL(15'),
 ('Data_Criacao DATE NOT NULL'),
 (');
-
   
   CREATE TABLE Transacao ('),
 ('ID_Transacao INT PRIMARY KEY AUTO_INCREMENT'),
