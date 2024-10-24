@@ -71,10 +71,10 @@ Campos:
 
 Relacionamentos entre Tabelas
 
-Conta ↔ Transacao: Relacionamento de um-para-muitos, onde uma conta pode realizar muitas transações.
-Conta ↔ Emprestimo: Relacionamento de um-para-muitos, onde uma conta pode solicitar muitos empréstimos.
-Conta ↔ CartaoCredito: Relacionamento de um-para-um, onde uma conta tem um único cartão de crédito.
-Conta ↔ PagamentoServico: Relacionamento de um-para-muitos, onde uma conta pode realizar muitos pagamentos de serviços.
+ Conta <-> Transacao: Relacionamento de um-para-muitos, onde uma conta pode realizar muitas transações.
+ Conta <-> Emprestimo: Relacionamento de um-para-muitos, onde uma conta pode solicitar muitos empréstimos.
+ Conta <-> CartaoCredito: Relacionamento de um-para-um, onde uma conta tem um único cartão de crédito.
+ Conta <-> PagamentoServico: Relacionamento de um-para-muitos, onde uma conta pode realizar muitos pagamentos de serviços.
 
 
 
