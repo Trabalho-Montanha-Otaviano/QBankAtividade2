@@ -4,18 +4,19 @@ O QBank é um sistema bancário simplificado que tem como objetivo gerenciar as 
 
 O banco de dados foi projetado para armazenar os seguintes tipos de dados:
 
-    Informações de Contas Bancárias: Contém dados pessoais dos clientes e saldo das contas.
-    Transações: Gerencia transferências entre contas.
-    Empréstimos: Armazena informações sobre solicitações de empréstimo, incluindo valor, taxa de juros e prazo.
-    Cartões de Crédito: Controla o limite de crédito e o valor da fatura atual de cada cliente.
-    Pagamentos de Serviços: Registra pagamentos de serviços, como luz, água e internet.
+
+Informações de Contas Bancárias: Contém dados pessoais dos clientes e saldo das contas.
+Transações: Gerencia transferências entre contas.
+Empréstimos: Armazena informações sobre solicitações de empréstimo, incluindo valor, taxa de juros e prazo.
+Cartões de Crédito: Controla o limite de crédito e o valor da fatura atual de cada cliente.
+Pagamentos de Serviços: Registra pagamentos de serviços, como luz, água e internet.
 
 Estrutura do Banco de Dados
 1. Tabela Conta
 
 Esta tabela contém as informações principais de cada cliente e suas contas bancárias.
 
-    Campos:
+Campos:
         ID_Conta: Identificador único da conta (chave primária).
         Nome_Cliente: Nome completo do titular da conta.
         CPF: Documento de identificação do cliente (único).
@@ -26,7 +27,7 @@ Esta tabela contém as informações principais de cada cliente e suas contas ba
 
 Armazena registros de transações financeiras entre contas, como transferências.
 
-    Campos:
+Campos:
         ID_Transacao: Identificador único da transação (chave primária).
         ID_Conta_Origem: Conta de onde os fundos foram retirados (chave estrangeira).
         ID_Conta_Destino: Conta que recebeu os fundos (chave estrangeira).
@@ -38,7 +39,7 @@ Armazena registros de transações financeiras entre contas, como transferência
 
 Contém informações sobre empréstimos solicitados pelos clientes.
 
-    Campos:
+Campos:
         ID_Emprestimo: Identificador único do empréstimo (chave primária).
         ID_Conta: Conta que solicitou o empréstimo (chave estrangeira).
         Valor: Valor do empréstimo solicitado.
@@ -50,7 +51,7 @@ Contém informações sobre empréstimos solicitados pelos clientes.
 
 Gerencia as informações de cartões de crédito de clientes, incluindo limite e fatura.
 
-    Campos:
+Campos:
         ID_Cartao: Identificador único do cartão de crédito (chave primária).
         ID_Conta: Conta associada ao cartão de crédito (chave estrangeira).
         Limite: Limite de crédito disponível no cartão.
@@ -61,7 +62,7 @@ Gerencia as informações de cartões de crédito de clientes, incluindo limite 
 
 Armazena os dados sobre pagamentos de serviços feitos pelos clientes.
 
-    Campos:
+Campos:
         ID_Pagamento: Identificador único do pagamento (chave primária).
         ID_Conta: Conta que realizou o pagamento (chave estrangeira).
         Servico: Nome do serviço pago (e.g., água, luz, internet).
@@ -70,10 +71,10 @@ Armazena os dados sobre pagamentos de serviços feitos pelos clientes.
 
 Relacionamentos entre Tabelas
 
-    Conta ↔ Transacao: Relacionamento de um-para-muitos, onde uma conta pode realizar muitas transações.
-    Conta ↔ Emprestimo: Relacionamento de um-para-muitos, onde uma conta pode solicitar muitos empréstimos.
-    Conta ↔ CartaoCredito: Relacionamento de um-para-um, onde uma conta tem um único cartão de crédito.
-    Conta ↔ PagamentoServico: Relacionamento de um-para-muitos, onde uma conta pode realizar muitos pagamentos de serviços.
+Conta ↔ Transacao: Relacionamento de um-para-muitos, onde uma conta pode realizar muitas transações.
+Conta ↔ Emprestimo: Relacionamento de um-para-muitos, onde uma conta pode solicitar muitos empréstimos.
+Conta ↔ CartaoCredito: Relacionamento de um-para-um, onde uma conta tem um único cartão de crédito.
+Conta ↔ PagamentoServico: Relacionamento de um-para-muitos, onde uma conta pode realizar muitos pagamentos de serviços.
 
 
 
